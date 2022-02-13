@@ -65,10 +65,10 @@ const Header = () => {
   }
 
   return (
-    <div className="z-10 top-0">
+    <div>
       {isShow ? (
         <motion.div
-          className="p-4"
+          className="p-4 z-10 top-0 w-full absolute bg-blue-100"
           initial="hidden"
           animate="visible"
           variants={{
@@ -98,8 +98,8 @@ const Header = () => {
           </div>
         </motion.div>
       ) : (
-        <>
-          <div className="flex w-full justify-between p-4 text-white">
+        <div className="z-10 top-0 w-full absolute">
+          <div className="flex justify-between p-4 text-white">
             <div>
               <button onClick={handleShowClick}>
                 <svg
@@ -118,10 +118,18 @@ const Header = () => {
                 </svg>
               </button>
             </div>
-            <div className="font-bold text-2xl">Tentang Senja</div>
+            <div className="font-bold flex flex-row items-center">
+              <h1 className="text-xs tracking-widest">TENTANG</h1>
+              <h1
+                className="mx-2 text-4xl tracking-widest"
+                style={{ fontFamily: "Sacramento" }}
+              >
+                Senja
+              </h1>
+            </div>
             <div></div>
           </div>
-        </>
+        </div>
       )}
     </div>
   );
