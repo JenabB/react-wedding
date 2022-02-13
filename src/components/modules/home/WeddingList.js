@@ -21,13 +21,13 @@ const WeddingList = () => {
                 alt={el.weddingPerson}
               />
               <div
-                className="mt-10 flex justify-center"
+                className="mt-10 flex justify-center items-center"
                 style={{ color: "#4D4D61" }}
               >
                 <h1 className="mx-2 text-2xl" style={{ fontFamily: "Cookie" }}>
                   {el.weddingPerson}
                 </h1>
-                <h1>-</h1>
+                <h1>—</h1>
                 <h1 className="mx-2 text-2xl" style={{ fontFamily: "Cookie" }}>
                   {el.weddingCity}
                 </h1>

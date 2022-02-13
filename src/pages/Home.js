@@ -51,8 +51,8 @@ const Home = () => {
       <div className="flex justify-center lg:my-24">
         <hr style={{ border: "0.5px solid #4D4D61", width: "80%" }} />
       </div>
-      <div className="p-8">
-        <h1>Tentang Senja 2022</h1>
+      <div className="p-8 w-1/4 text-center" style={{ fontFamily: "Roboto" }}>
+        <h1>Tentang Senja — 2022</h1>
       </div>
     </div>
   );
