@@ -9,7 +9,7 @@ const WeddingList = () => {
         {weddings.map((el, index) => (
           <div
             key={index}
-            className="m-4 my-24 lg:mx-8"
+            className="m-4 my-10 lg:my-24 lg:mx-8"
             data-aos="fade-up"
             data-aos-anchor-placement="center-bottom"
           >

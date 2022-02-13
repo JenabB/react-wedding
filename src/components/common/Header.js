@@ -68,7 +68,8 @@ const Header = () => {
     <div>
       {isShow ? (
         <motion.div
-          className="p-4 z-10 top-0 w-full absolute bg-blue-100"
+          className="p-4 z-10 top-0 w-full absolute h-screen text-xs "
+          style={{ backgroundColor: "#D2C8B7" }}
           initial="hidden"
           animate="visible"
           variants={{
@@ -87,14 +88,22 @@ const Header = () => {
         >
           <div className="flex justify-between px-4">
             <div></div>
-
-            <h1 className="tracking-widest">TENTANG KAMI</h1>
-            <button onClick={handleShowClick}>X</button>
+            <div className="font-bold flex flex-row items-center">
+              <h1 className="text-xs tracking-widest">TENTANG</h1>
+              <h1
+                className="mx-2 text-4xl tracking-widest"
+                style={{ fontFamily: "Sacramento" }}
+              >
+                Senja
+              </h1>
+            </div>
+            <button onClick={handleShowClick}>x</button>
           </div>
           <div className="text-center">
-            <div className="my-8 tracking-widest">KARYA</div>
-            <div className="my-8 tracking-widest">INFO</div>
-            <div className="my-8 tracking-widest">KONTAK</div>
+            <h1 className="my-8 tracking-widest">TENTANG KAMI</h1>
+            <h1 className="my-8 tracking-widest">KARYA</h1>
+            <h1 className="my-8 tracking-widest">INFO</h1>
+            <h1 className="my-8 tracking-widest">KONTAK</h1>
           </div>
         </motion.div>
       ) : (
