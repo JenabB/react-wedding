@@ -16,7 +16,7 @@ const WeddingVideoList = () => {
             <Link to={`/wedding/${el.weddingId}`}>
               <img
                 src={el.weddingThumb}
-                style={{ height: "250px", objectFit: "cover" }}
+                style={{ height: "200px", objectFit: "cover" }}
                 className="w-screen"
                 alt={el.weddingPerson}
               />
@@ -24,11 +24,11 @@ const WeddingVideoList = () => {
                 className="mt-10 flex justify-center items-center"
                 style={{ color: "#4D4D61" }}
               >
-                <h1 className="mx-2 text-2xl" style={{ fontFamily: "Cookie" }}>
+                <h1 className="mx-2 text-xl" style={{ fontFamily: "Cookie" }}>
                   {el.weddingPerson}
                 </h1>
                 <h1>—</h1>
-                <h1 className="mx-2 text-2xl" style={{ fontFamily: "Cookie" }}>
+                <h1 className="mx-2 text-xl" style={{ fontFamily: "Cookie" }}>
                   {el.weddingCity}
                 </h1>
               </div>
