@@ -13,7 +13,7 @@ const Carousel = () => {
     slidesToScroll: 1,
   };
 
-  const style = "lg:h-screen w-screen object-cover";
+  const style = "h-96 lg:h-screen w-screen object-cover";
 
   return (
     <div>
@@ -22,7 +22,6 @@ const Carousel = () => {
           <img
             src="https://p4.wallpaperbetter.com/wallpaper/905/749/293/hands-wedding-rings-bouquet-roses-hd-wallpaper-77841-wallpaper-preview.jpg"
             alt="carousel"
-            style={{ height: "350px" }}
             className={style}
           />
         </div>
@@ -30,7 +29,6 @@ const Carousel = () => {
           <img
             src="https://cdn.kibrispdr.org/data/wedding-hd-0.jpg"
             alt="carousel"
-            style={{ height: "350px" }}
             className={style}
           />
         </div>
@@ -38,7 +36,6 @@ const Carousel = () => {
           <img
             src="https://senjamanagement.com/data1/images/5.jpg"
             alt="carousel"
-            style={{ height: "350px" }}
             className={style}
           />
         </div>
@@ -46,7 +43,6 @@ const Carousel = () => {
           <img
             src="https://senjamanagement.com/assets/images/rizky.jpeg"
             alt="carousel"
-            style={{ height: "350px" }}
             className={style}
           />
         </div>
