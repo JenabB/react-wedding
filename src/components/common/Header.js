@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -43,21 +44,32 @@ const Header = () => {
       >
         <div className="flex  justify-between p-16 text-white">
           <div className="flex text-xs font-bold tracking-widest">
-            <h1 className="">TENTANG KAMI</h1>
-            <h1 className="mx-4 t">KARYA</h1>
+            <Link to="tentang">
+              <h1 className="">TENTANG KAMI</h1>
+            </Link>
+            <Link to="karya">
+              <h1 className="mx-4 t">KARYA</h1>
+            </Link>
           </div>
-          <div className="font-bold flex flex-row items-center">
-            <h1 className="text-xs tracking-widest">TENTANG</h1>
-            <h1
-              className="mx-2 text-4xl tracking-widest"
-              style={{ fontFamily: "Sacramento" }}
-            >
-              Senja
-            </h1>
-          </div>
+          <Link to="/">
+            <div className="font-bold flex flex-row items-center">
+              <h1 className="text-xs tracking-widest">TENTANG</h1>
+              <h1
+                className="mx-2 text-4xl tracking-widest"
+                style={{ fontFamily: "Sacramento" }}
+              >
+                Senja
+              </h1>
+            </div>
+          </Link>
           <div className="flex text-xs font-bold tracking-widest">
-            <div>INFO</div>
-            <div className="mx-4">KONTAK</div>
+            <Link to="info">
+              <h1>INFO</h1>
+            </Link>
+            <Link to="kontak">
+              {" "}
+              <h1 className="mx-4">KONTAK</h1>
+            </Link>
           </div>
         </div>
       </motion.div>
@@ -88,22 +100,32 @@ const Header = () => {
         >
           <div className="flex justify-between px-4">
             <div></div>
-            <div className="font-bold flex flex-row items-center">
-              <h1 className="text-xs tracking-widest">TENTANG</h1>
-              <h1
-                className="mx-2 text-4xl tracking-widest"
-                style={{ fontFamily: "Sacramento" }}
-              >
-                Senja
-              </h1>
-            </div>
+            <Link to="/">
+              <div className="font-bold flex flex-row items-center">
+                <h1 className="text-xs tracking-widest">TENTANG</h1>
+                <h1
+                  className="mx-2 text-4xl tracking-widest"
+                  style={{ fontFamily: "Sacramento" }}
+                >
+                  Senja
+                </h1>
+              </div>
+            </Link>
             <button onClick={handleShowClick}>x</button>
           </div>
           <div className="text-center">
-            <h1 className="my-8 tracking-widest">TENTANG KAMI</h1>
-            <h1 className="my-8 tracking-widest">KARYA</h1>
-            <h1 className="my-8 tracking-widest">INFO</h1>
-            <h1 className="my-8 tracking-widest">KONTAK</h1>
+            <Link to="tentang">
+              <h1 className="my-8 tracking-widest">TENTANG KAMI</h1>
+            </Link>
+            <Link to="karya">
+              <h1 className="my-8 tracking-widest">KARYA</h1>
+            </Link>
+            <Link to="info">
+              <h1 className="my-8 tracking-widest">INFO</h1>
+            </Link>
+            <Link to="kontak">
+              <h1 className="my-8 tracking-widest">KONTAK</h1>
+            </Link>
           </div>
         </motion.div>
       ) : (
@@ -113,7 +135,7 @@ const Header = () => {
               <button onClick={handleShowClick}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6"
+                  className="w-6 h-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -127,15 +149,17 @@ const Header = () => {
                 </svg>
               </button>
             </div>
-            <div className="font-bold flex flex-row items-center">
-              <h1 className="text-xs tracking-widest">TENTANG</h1>
-              <h1
-                className="mx-2 text-4xl tracking-widest"
-                style={{ fontFamily: "Sacramento" }}
-              >
-                Senja
-              </h1>
-            </div>
+            <Link to="/">
+              <div className="font-bold flex flex-row items-center">
+                <h1 className="text-xs tracking-widest">TENTANG</h1>
+                <h1
+                  className="mx-2 text-4xl tracking-widest"
+                  style={{ fontFamily: "Sacramento" }}
+                >
+                  Senja
+                </h1>
+              </div>
+            </Link>
             <div></div>
           </div>
         </div>

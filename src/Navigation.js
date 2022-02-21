@@ -6,20 +6,27 @@ import {
   Outlet,
   Link,
 } from "react-router-dom";
-import Header from "./components/common/Header";
+
 import Home from "./pages/Home";
 import WeddingDetail from "./pages/WeddingDetail";
 import AllPhoto from "./pages/AllPhoto";
+import TentangKami from "./pages/TentangKami";
+import Kontak from "./pages/Kontak";
+import Info from "./pages/Info";
+import Karya from "./pages/Karya";
 
 export default function Navigation() {
   return (
     <Router>
-      <Header />
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
           <Route path="wedding/:id" element={<WeddingDetail />} />
           <Route path="photograf" element={<AllPhoto />} />
+          <Route path="tentang" element={<TentangKami />} />
+          <Route path="kontak" element={<Kontak />} />
+          <Route path="karya" element={<Karya />} />
+          <Route path="info" element={<Info />} />
         </Route>
 
         <Route path="*" element={<NoMatch />} />

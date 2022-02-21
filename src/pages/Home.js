@@ -5,11 +5,12 @@ import WeddingList from "../components/modules/home/WeddingList";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import WeddingVideoList from "../components/modules/home/WeddingVideoList";
-
+import Header from "../components/common/Header";
 const Home = () => {
   AOS.init();
   return (
     <div>
+      <Header />
       <Carousel />
       <div
         data-aos="fade-up"
